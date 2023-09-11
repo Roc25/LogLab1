@@ -21,12 +21,14 @@ void findBy(student st[], int len) {
 	scanf("%d", &index);
 
 	if ((index > 0) && (index < 4)) {
-		printf("¬ведите параметр поиска\n");
+		printf("¬ведите параметр поиска: ");
 		scanf("%20s", &param);
+		printf("\n");
 	}
 	else if (index == 4) {
-		printf("¬ведите номер\n");
+		printf("¬ведите номер: ");
 		scanf("%d", &paramz);
+		printf("\n");
 	}
 
 	for (int i = 0; i < len; i++) {
@@ -52,6 +54,7 @@ void findBy(student st[], int len) {
 			break;
 		}
 	}
+	printf("\n");
 }
 
 int maxDiffMin(int mas[], int len) {
@@ -110,10 +113,10 @@ void createStudents(student stud[]){
 		printf("¬ведите »м€ студента %s\n", stud[i].Famil);
 		scanf("%20s", stud[i].Name);
 
-		printf("¬ведите название ‘акультет студента %s%s\n", stud[i].Famil, stud[i].Name);
+		printf("¬ведите название ‘акультет студента %s %s\n", stud[i].Famil, stud[i].Name);
 		scanf("%20s", stud[i].Facult);
 
-		printf("¬ведите номер зачетной книжки студента %s%s\n", stud[i].Famil, stud[i].Name);
+		printf("¬ведите номер зачетной книжки студента %s %s\n", stud[i].Famil, stud[i].Name);
 		scanf("%d", &stud[i].Nomzach);
 	}
 }
@@ -142,6 +145,7 @@ int main() {
 	printf("\n");
 
 	//“ретье задание
+	printf("¬ведите число элементов: ");
 	scanf("%d", &size);
 	int* randmas2 = randMas(size);
 	for (int i = 0; i < size; i++) {
@@ -155,7 +159,10 @@ int main() {
 
 	//ѕ€тое задание
 	createStudents(stud);
-	findBy(stud, 3);
+
+	while (true){
+		findBy(stud, 3);
+	}
 
 
 	getchar();
