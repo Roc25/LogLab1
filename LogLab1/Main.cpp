@@ -13,20 +13,20 @@ struct student
 
 void findBy(student st[], int len) {
 	//index 1 for name, 2 for famil, 3 for facul, 4 for nomzach
-	printf("Ââåäèòå ïàğàìåòğ ïîèñêà\n");
-	printf("1 - Èìÿ \n2 - Ôàìèëè\n3 - Ôàêóëüòåò \n4 - Íîìåğ çà÷åòêè\n");
+	printf("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¿Ğ°Ñ€Ğ°Ğ¼ĞµÑ‚Ñ€ Ğ¿Ğ¾Ğ¸ÑĞºĞ°\n");
+	printf("1 - Ğ˜Ğ¼Ñ \n2 - Ğ¤Ğ°Ğ¼Ğ¸Ğ»Ğ¸\n3 - Ğ¤Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚ \n4 - ĞĞ¾Ğ¼ĞµÑ€ Ğ·Ğ°Ñ‡ĞµÑ‚ĞºĞ¸\n");
 	int index;
 	int paramz = 0;
 	char param[20];
 	scanf("%d", &index);
 
 	if ((index > 0) && (index < 4)) {
-		printf("Ââåäèòå ïàğàìåòğ ïîèñêà: ");
+		printf("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¿Ğ°Ñ€Ğ°Ğ¼ĞµÑ‚Ñ€ Ğ¿Ğ¾Ğ¸ÑĞºĞ°: ");
 		scanf("%20s", &param);
 		printf("\n");
 	}
 	else if (index == 4) {
-		printf("Ââåäèòå íîìåğ: ");
+		printf("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ½Ğ¾Ğ¼ĞµÑ€: ");
 		scanf("%d", &paramz);
 		printf("\n");
 	}
@@ -36,19 +36,19 @@ void findBy(student st[], int len) {
 		switch (index){
 		case 1:
 			if (strcmp(stud.Name, param) == 0) {
-				printf("Còóäåíò %s %s îáó÷àåòñÿ íà ôàêóëüòåòå %s, íîìåğ çà÷¸òíîé êíèæêè %d \n", st[i].Famil, st[i].Name, st[i].Facult, st[i].Nomzach);
+				printf("CÑ‚ÑƒĞ´ĞµĞ½Ñ‚ %s %s Ğ¾Ğ±ÑƒÑ‡Ğ°ĞµÑ‚ÑÑ Ğ½Ğ° Ñ„Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚Ğµ %s, Ğ½Ğ¾Ğ¼ĞµÑ€ Ğ·Ğ°Ñ‡Ñ‘Ñ‚Ğ½Ğ¾Ğ¹ ĞºĞ½Ğ¸Ğ¶ĞºĞ¸ %d \n", st[i].Famil, st[i].Name, st[i].Facult, st[i].Nomzach);
 			}
 		case 2:
 			if (strcmp(stud.Famil, param) == 0) {
-				printf("Còóäåíò %s %s îáó÷àåòñÿ íà ôàêóëüòåòå %s, íîìåğ çà÷¸òíîé êíèæêè %d \n", st[i].Famil, st[i].Name, st[i].Facult, st[i].Nomzach);
+				printf("CÑ‚ÑƒĞ´ĞµĞ½Ñ‚ %s %s Ğ¾Ğ±ÑƒÑ‡Ğ°ĞµÑ‚ÑÑ Ğ½Ğ° Ñ„Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚Ğµ %s, Ğ½Ğ¾Ğ¼ĞµÑ€ Ğ·Ğ°Ñ‡Ñ‘Ñ‚Ğ½Ğ¾Ğ¹ ĞºĞ½Ğ¸Ğ¶ĞºĞ¸ %d \n", st[i].Famil, st[i].Name, st[i].Facult, st[i].Nomzach);
 			}
 		case 3:
 			if (strcmp(stud.Facult, param) == 0) {
-				printf("Còóäåíò %s %s îáó÷àåòñÿ íà ôàêóëüòåòå %s, íîìåğ çà÷¸òíîé êíèæêè %d \n", st[i].Famil, st[i].Name, st[i].Facult, st[i].Nomzach);
+				printf("CÑ‚ÑƒĞ´ĞµĞ½Ñ‚ %s %s Ğ¾Ğ±ÑƒÑ‡Ğ°ĞµÑ‚ÑÑ Ğ½Ğ° Ñ„Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚Ğµ %s, Ğ½Ğ¾Ğ¼ĞµÑ€ Ğ·Ğ°Ñ‡Ñ‘Ñ‚Ğ½Ğ¾Ğ¹ ĞºĞ½Ğ¸Ğ¶ĞºĞ¸ %d \n", st[i].Famil, st[i].Name, st[i].Facult, st[i].Nomzach);
 			}
 		case 4:
 			if (stud.Nomzach == paramz) {
-				printf("Còóäåíò %s %s îáó÷àåòñÿ íà ôàêóëüòåòå %s, íîìåğ çà÷¸òíîé êíèæêè %d \n", st[i].Famil, st[i].Name, st[i].Facult, st[i].Nomzach);
+				printf("CÑ‚ÑƒĞ´ĞµĞ½Ñ‚ %s %s Ğ¾Ğ±ÑƒÑ‡Ğ°ĞµÑ‚ÑÑ Ğ½Ğ° Ñ„Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚Ğµ %s, Ğ½Ğ¾Ğ¼ĞµÑ€ Ğ·Ğ°Ñ‡Ñ‘Ñ‚Ğ½Ğ¾Ğ¹ ĞºĞ½Ğ¸Ğ¶ĞºĞ¸ %d \n", st[i].Famil, st[i].Name, st[i].Facult, st[i].Nomzach);
 			}
 		default:
 			break;
@@ -92,7 +92,7 @@ void sumRowCol(int mas[3][3]) {
 		{
 			rowsum = rowsum + mas[i][j];
 		}
-		printf("Â %d ñòğîêå: %d\n", i, rowsum);
+		printf("Ğ’ %d ÑÑ‚Ñ€Ğ¾ĞºĞµ: %d\n", i, rowsum);
 	}
 
 	for (int i = 0; i < 3; i++) {
@@ -101,29 +101,29 @@ void sumRowCol(int mas[3][3]) {
 		{
 			colsum = colsum + mas[j][i];
 		}
-		printf("Â %d êîëîíêå: %d\n", i, colsum);
+		printf("Ğ’ %d ĞºĞ¾Ğ»Ğ¾Ğ½ĞºĞµ: %d\n", i, colsum);
 	}
 }
 
 void createStudents(student stud[]){
 	for (int i = 0; i < 3; i++) {
-		printf("Ââåäèòå Ôàìèëèş ñòóäåíòà\n");
+		printf("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¤Ğ°Ğ¼Ğ¸Ğ»Ğ¸Ñ ÑÑ‚ÑƒĞ´ĞµĞ½Ñ‚Ğ°\n");
 		scanf("%20s", stud[i].Famil);
 
-		printf("Ââåäèòå Èìÿ ñòóäåíòà %s\n", stud[i].Famil);
+		printf("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ˜Ğ¼Ñ ÑÑ‚ÑƒĞ´ĞµĞ½Ñ‚Ğ° %s\n", stud[i].Famil);
 		scanf("%20s", stud[i].Name);
 
-		printf("Ââåäèòå íàçâàíèå Ôàêóëüòåò ñòóäåíòà %s %s\n", stud[i].Famil, stud[i].Name);
+		printf("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ½Ğ°Ğ·Ğ²Ğ°Ğ½Ğ¸Ğµ Ğ¤Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚ ÑÑ‚ÑƒĞ´ĞµĞ½Ñ‚Ğ° %s %s\n", stud[i].Famil, stud[i].Name);
 		scanf("%20s", stud[i].Facult);
 
-		printf("Ââåäèòå íîìåğ çà÷åòíîé êíèæêè ñòóäåíòà %s %s\n", stud[i].Famil, stud[i].Name);
+		printf("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ½Ğ¾Ğ¼ĞµÑ€ Ğ·Ğ°Ñ‡ĞµÑ‚Ğ½Ğ¾Ğ¹ ĞºĞ½Ğ¸Ğ¶ĞºĞ¸ ÑÑ‚ÑƒĞ´ĞµĞ½Ñ‚Ğ° %s %s\n", stud[i].Famil, stud[i].Name);
 		scanf("%d", &stud[i].Nomzach);
 	}
 }
 
 void studentsList(student stud[]){
 	for (int i = 0; i < 3; i++) {
-		printf("Còóäåíò %s %s îáó÷àåòñÿ íà ôàêóëüòåòå %s, íîìåğ çà÷¸òíîé êíèæêè %d \n", stud[i].Famil, stud[i].Name, stud[i].Facult, stud[i].Nomzach);
+		printf("CÑ‚ÑƒĞ´ĞµĞ½Ñ‚ %s %s Ğ¾Ğ±ÑƒÑ‡Ğ°ĞµÑ‚ÑÑ Ğ½Ğ° Ñ„Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚Ğµ %s, Ğ½Ğ¾Ğ¼ĞµÑ€ Ğ·Ğ°Ñ‡Ñ‘Ñ‚Ğ½Ğ¾Ğ¹ ĞºĞ½Ğ¸Ğ¶ĞºĞ¸ %d \n", stud[i].Famil, stud[i].Name, stud[i].Facult, stud[i].Nomzach);
 	}
 }
 
@@ -131,12 +131,12 @@ int main() {
 	struct student stud[3];
 	setlocale(LC_ALL, "Rus");
 
-	//Ïåğâîå çàäàíèå
+	//ĞŸĞµÑ€Ğ²Ğ¾Ğµ Ğ·Ğ°Ğ´Ğ°Ğ½Ğ¸Ğµ
 	int intmas[5] = {1,2,3,4,5};
 	int dif = maxDiffMin(intmas, 5);
-	printf("Ğàçíèöà ıëåìåíòîâ: %d\n", dif);
+	printf("Ğ Ğ°Ğ·Ğ½Ğ¸Ñ†Ğ° ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ¾Ğ²: %d\n", dif);
 
-	//Âòîğîå çàäàíèå
+	//Ğ’Ñ‚Ğ¾Ñ€Ğ¾Ğµ Ğ·Ğ°Ğ´Ğ°Ğ½Ğ¸Ğµ
 	int size = 10;
 	int* randmas = randMas(size);
 	for (int i = 0; i < size; i++){
@@ -144,8 +144,8 @@ int main() {
 	}
 	printf("\n");
 
-	//Òğåòüå çàäàíèå
-	printf("Ââåäèòå ÷èñëî ıëåìåíòîâ: ");
+	//Ğ¢Ñ€ĞµÑ‚ÑŒĞµ Ğ·Ğ°Ğ´Ğ°Ğ½Ğ¸Ğµ
+	printf("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ¾Ğ²: ");
 	scanf("%d", &size);
 	int* randmas2 = randMas(size);
 	for (int i = 0; i < size; i++) {
@@ -153,11 +153,11 @@ int main() {
 	}
 	printf("\n");
 
-	//×åòâåğòîå çàäàíèå
+	//Ğ§ĞµÑ‚Ğ²ĞµÑ€Ñ‚Ğ¾Ğµ Ğ·Ğ°Ğ´Ğ°Ğ½Ğ¸Ğµ
 	int mas[3][3] = { {1,2,3}, {4,5,6}, {7,8,9} };
 	sumRowCol(mas);
 
-	//Ïÿòîå çàäàíèå
+	//ĞŸÑÑ‚Ğ¾Ğµ Ğ·Ğ°Ğ´Ğ°Ğ½Ğ¸Ğµ
 	createStudents(stud);
 
 	while (true){
